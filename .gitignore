@@ -23,3 +23,6 @@
 /config/master.key
 .env
 /config/database.yml
+
+# rubymine specifics
+.idea/workspace.xml
