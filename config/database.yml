@@ -1,12 +1,11 @@
 development:
   adapter: postgresql
   encoding: unicode
-  host: localhost
-  database: clacksbins-dev
-  username: admin
-  password: password
-  pool: 10
-  timeout: 5000
+  host: <%= ENV['POSTGRESQL_HOST'] %>
+  username: <%= ENV['POSTGRESQL_USER_NAME'] %>
+  password: <%= ENV['POSTGRESQL_PASSWORD'] %>
+  pool: 5
+  database: <%= ENV['POSTGRESQL_DB'] %>
 
 test:
   adapter: postgresql
