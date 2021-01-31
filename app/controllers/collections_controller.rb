@@ -9,7 +9,7 @@ class CollectionsController < ApplicationController
     page = params[:page] || 1
     collections = apply_scopes(Collection).includes(:bin_types).page(page.to_i)
     render json: {
-      collections: collections.as_json(**Collection.json_options),
+      collections: collections.as_json(**Collection::JSON_OPTIONS),
       page: page,
       total_pages: collections.total_pages
     }
@@ -17,7 +17,7 @@ class CollectionsController < ApplicationController
 
   def show
     collection = Collection.find(params[:id])
-    render json: collection, **Collection.json_options
+    render json: collection, **Collection::JSON_OPTIONS
   end
 end
 

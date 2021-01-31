@@ -3,5 +3,8 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/spec/models/bin_type_test.rb" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="RVM: ruby-2.5.0" project-jdk-type="RUBY_SDK" />
 </project>
